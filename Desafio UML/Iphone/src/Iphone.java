@@ -76,7 +76,7 @@ class IPhone implements AparelhoTelefonico, ReprodutorMusical, NavegadorInternet
         IPhone myPhone = new IPhone();
 
         // Exemplo de uso das funcionalidades do iPhone
-        myPhone.ligar("123-456-7890");
+        myPhone.ligar(1211101210l);
         myPhone.tocar();
         myPhone.exibirPagina("https://www.example.com");
     }
