@@ -1,18 +1,17 @@
 ## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Neste diretorio esta meu trabalho do primeiro projeto final
 
 ## Folder Structure
 
-The workspace contains two folders by default, where:
+- `src/dio/buildermethod`: Contem a minha contribuição ao projeto, onde implemento um exemplo de padrão de projeto de builder
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+# O Padrão de Projeto Builder
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+O Padrão de Projeto Builder é um padrão de projeto de criação, que permite a construção de objetos complexos passo a passo. Ele é útil quando você tem um objeto com muitos atributos opcionais e deseja criar instâncias desse objeto de forma flexível, evitando construtores excessivamente complexos.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Características Principais
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- Separa a construção de um objeto complexo da sua representação, permitindo a criação de diferentes tipos de objetos com os mesmos passos de construção.
+- Oferece um direcionamento fluente (chaining) para definir atributos, tornando o código mais legível.
+- Pode ser usado com objetos imutáveis, o que garante a imutabilidade do objeto final.
