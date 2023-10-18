@@ -1,4 +1,4 @@
-package dio.strategy;
+package dio.RealizadoEmVideo.strategy;
 
 public class ComportamentoNormal implements Comportamento{
     public void mover(){

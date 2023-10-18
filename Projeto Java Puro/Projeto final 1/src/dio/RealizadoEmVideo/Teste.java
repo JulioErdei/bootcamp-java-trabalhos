@@ -1,14 +1,14 @@
-package dio;
+package dio.RealizadoEmVideo;
 
-import dio.syngleton.SingletonEager;
-import dio.syngleton.SingletonLazy;
-import dio.syngleton.SingletonLazyHolder;
-import dio.strategy.Comportamento;
-import dio.strategy.ComportamentoAgressivo;
-import dio.strategy.ComportamentoDefensivo;
-import dio.strategy.ComportamentoNormal;
-import dio.strategy.Robo;
-import dio.facade.Facade;
+import dio.RealizadoEmVideo.syngleton.SingletonEager;
+import dio.RealizadoEmVideo.syngleton.SingletonLazy;
+import dio.RealizadoEmVideo.syngleton.SingletonLazyHolder;
+import dio.RealizadoEmVideo.facade.Facade;
+import dio.RealizadoEmVideo.strategy.Comportamento;
+import dio.RealizadoEmVideo.strategy.ComportamentoAgressivo;
+import dio.RealizadoEmVideo.strategy.ComportamentoDefensivo;
+import dio.RealizadoEmVideo.strategy.ComportamentoNormal;
+import dio.RealizadoEmVideo.strategy.Robo;
 
 public class Teste {
     public static void main(String[] args) {

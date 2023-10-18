@@ -1,7 +1,7 @@
-package dio.facade;
+package dio.RealizadoEmVideo.facade;
 
-import dio.Subsistema2.CepApi;
-import dio.Subsistema1.CrmService;
+import dio.RealizadoEmVideo.Subsistema1.CrmService;
+import dio.RealizadoEmVideo.Subsistema1.Subsistema2.CepApi;
 
 public class Facade {        
     public void migrarCliente(String nome, String cep){

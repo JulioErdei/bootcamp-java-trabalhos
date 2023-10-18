@@ -1,4 +1,4 @@
-package dio.syngleton;
+package dio.RealizadoEmVideo.syngleton;
 
 public class SingletonEager {
     private static SingletonEager instancia = new SingletonEager();
