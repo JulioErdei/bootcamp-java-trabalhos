@@ -14,24 +14,24 @@ public class Account {
     private ProfilePhotos profilePhoto;
 
     @Column(unique=true)
-    private String accountUsername;
+    private String username;
 
-    @Column(scale = 5)
+    @Column(precision = 5)
     private int accountFollowers;
-    @Column(scale = 5)
+    @Column(precision = 5)
     private int accountFollowing;
 
     private String bio;
 
     public int getAccountFollowers() {return accountFollowers;}
     public int getAccountFollowing() {return accountFollowing;}
-    public String getAccountUsername() {return accountUsername;}
+    public String getAccountUsername() {return username;}
     public String getBio() {return bio;}
     public ProfilePhotos getProfilePhoto() {return profilePhoto;}
     
     public void setAccountFollowers(int accountFollowers) {this.accountFollowers = accountFollowers;}
     public void setAccountFollowing(int accountFollowing) {this.accountFollowing = accountFollowing;}
-    public void setAccountUsername(String accountUsername) {this.accountUsername = accountUsername;}
+    public void setAccountUsername(String username) {this.username = username;}
     public void setBio(String bio) {this.bio = bio;}
     public void setProfilePhoto(ProfilePhotos profilePhoto) {this.profilePhoto = profilePhoto;}
 
