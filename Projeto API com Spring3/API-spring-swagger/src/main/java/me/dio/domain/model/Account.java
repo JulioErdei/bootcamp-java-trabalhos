@@ -10,7 +10,8 @@ public class Account {
     private Long id;
 
 
-    private Photos profilePhoto;
+    @OneToOne(cascade= CascadeType.ALL)
+    private ProfilePhotos profilePhoto;
 
     @Column(unique=true)
     private String accountUsername;
@@ -26,13 +27,13 @@ public class Account {
     public int getAccountFollowing() {return accountFollowing;}
     public String getAccountUsername() {return accountUsername;}
     public String getBio() {return bio;}
-    public Photos getProfilePhoto() {return profilePhoto;}
+    public ProfilePhotos getProfilePhoto() {return profilePhoto;}
     
     public void setAccountFollowers(int accountFollowers) {this.accountFollowers = accountFollowers;}
     public void setAccountFollowing(int accountFollowing) {this.accountFollowing = accountFollowing;}
     public void setAccountUsername(String accountUsername) {this.accountUsername = accountUsername;}
     public void setBio(String bio) {this.bio = bio;}
-    public void setProfilePhoto(Photos profilePhoto) {this.profilePhoto = profilePhoto;}
+    public void setProfilePhoto(ProfilePhotos profilePhoto) {this.profilePhoto = profilePhoto;}
 
     public void setId(Long id) {this.id = id;}
     public Long getId() {return id;}

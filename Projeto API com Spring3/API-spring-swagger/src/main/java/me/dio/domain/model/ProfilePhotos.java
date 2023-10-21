@@ -1,13 +1,9 @@
 package me.dio.domain.model;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 
-@Entity(name = "tb_photos")
-public class Photos {
-
+@Entity(name = "tb_ProfPhotos")
+public class ProfilePhotos {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

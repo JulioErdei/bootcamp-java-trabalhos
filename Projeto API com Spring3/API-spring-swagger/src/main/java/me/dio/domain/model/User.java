@@ -1,13 +1,6 @@
 package me.dio.domain.model;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.OneToOne;
+import jakarta.persistence.*;
 import java.util.List;
 
 
@@ -22,10 +15,13 @@ public class User {
 
     @OneToOne(cascade= CascadeType.ALL)
     private Account account;
-    @OneToMany(cascade= CascadeType.ALL)
+
+    @OneToOne(cascade = CascadeType.ALL)
     private Icons icons;
+
     @OneToMany(cascade= CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Photos> photos;
+
     @OneToOne(cascade= CascadeType.ALL)
     private DownBar downBar;
 
