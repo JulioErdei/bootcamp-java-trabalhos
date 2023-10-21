@@ -16,7 +16,7 @@ Repositorio para colocar os desafios do programa de bootcamp em java da dio.
   }
 
   class Account {
-    - profilePhoto: String
+    - profilePhoto: Photo
     - accountUsername: String
     - accountFollowers: Number
     - accountFollowing: Number

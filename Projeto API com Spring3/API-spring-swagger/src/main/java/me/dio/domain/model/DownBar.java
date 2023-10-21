@@ -1,7 +1,14 @@
 package me.dio.domain.model;
 
+import jakarta.persistence.*;
+
+@Entity(name = "tb_downbar")
 public class DownBar {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String home;
     private String search;
     private String reels;

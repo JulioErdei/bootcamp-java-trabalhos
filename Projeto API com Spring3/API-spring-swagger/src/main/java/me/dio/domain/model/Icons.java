@@ -1,7 +1,13 @@
 package me.dio.domain.model;
 
+import jakarta.persistence.*;
+
+@Entity(name = "tb_icons")
 public class Icons {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String icon1;
     private String icon2;
 
