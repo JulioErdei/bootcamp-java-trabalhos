@@ -9,7 +9,7 @@ Repositorio para colocar os desafios do programa de bootcamp em java da dio.
     - name: String
     - account: Account
     - icons: Icons
-    - photos: Photos
+    - Photos[] photos
     - downBar: DownBar
     
     + getUserInfo(): String
