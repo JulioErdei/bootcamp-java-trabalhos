@@ -11,16 +11,19 @@ Repositorio para colocar os desafios do programa de bootcamp em java da dio.
     - icons: Icons
     - Photos[] photos
     - downBar: DownBar
-    
-    + getUserInfo(): String
   }
 
   class Account {
-    - profilePhoto: Photo
-    - accountUsername: String
+    - profilePhoto: ProfilePhotos
+    - Username: String
     - accountFollowers: Number
     - accountFollowing: Number
     - bio: String
+  }
+
+  class ProfilePhotos{
+    - photo : String
+    - description : String
   }
 
   class Icons {
@@ -29,7 +32,8 @@ Repositorio para colocar os desafios do programa de bootcamp em java da dio.
   }
 
   class Photos {
-    - photoN: String
+    - photo : String
+    - description : String
   }
 
   class DownBar {
@@ -44,5 +48,6 @@ Repositorio para colocar os desafios do programa de bootcamp em java da dio.
   User "1" *-- "N" Icons
   User "1" *-- "N" Photos
   User "1" *-- "1" DownBar
+  Account "1" *-- "1" ProfilePhotos
 
   ```
